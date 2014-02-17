@@ -1,0 +1,302 @@
+/*
+Theme Name: Ruhaan
+Theme URI: http://mysite.com
+Author: Danisu
+Author URI: http://wordpress.org/support/profile/danisu
+Description: The 2014 responsive theme for WordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: ruhaan
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*remove all css initially*/
+/*Import partials*/
+/*body of the page*/
+/* line 7, _/components/sass/_base.scss */
+body {
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;
+  line-height: 160%;
+  background: #eae3cb;
+  color: #0a2933;
+}
+
+/*headings all the headings compass helper*/
+/* line 16, _/components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Bree Serif, serif;
+  font-weight: normal;
+  color: #475b62;
+  /*Compass mixin CSS3 feature*/
+  text-shadow: #fcf4dc 1px 1px;
+}
+
+/* line 25, _/components/sass/_base.scss */
+h1 {
+  font-size: 2.2rem;
+  color: #1f7f9e;
+  margin-bottom: .4rem;
+  border-bottom: 1px solid #819090;
+  padding-top: 10px;
+}
+
+/* line 33, _/components/sass/_base.scss */
+h2 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  margin: 20px 0 0 0;
+  color: #bd3613;
+}
+
+/* line 40, _/components/sass/_base.scss */
+h3 {
+  font-size: 1.8rem;
+  line-height: 60%;
+  color: #bd3613;
+}
+
+/* line 46, _/components/sass/_base.scss */
+a {
+  text-decoration: underline;
+  color: #536870;
+  /*encapsulation*/
+}
+/* line 50, _/components/sass/_base.scss */
+a:hover {
+  color: #bd3613;
+}
+
+/* line 55, _/components/sass/_base.scss */
+p {
+  margin-bottom: 10px;
+}
+
+/* line 16, _/components/sass/_layout.scss */
+.layout {
+  padding: 0 3%;
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 24, _/components/sass/_layout.scss */
+header img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 95%;
+  margin: 2.5%;
+  max-width: 150px;
+  margin-bottom: 0;
+}
+/* line 32, _/components/sass/_layout.scss */
+header .hero {
+  width: 100%;
+}
+@media (min-width: 47em) {
+  /* line 32, _/components/sass/_layout.scss */
+  header .hero {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 450px;
+    background: url(http://placekitten.com/1200/800);
+    background: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, rgba(4, 32, 41, 0.6)), color-stop(100%, rgba(4, 32, 41, 0))), url(http://placekitten.com/1200/800);
+    background: -webkit-linear-gradient(bottom left, rgba(4, 32, 41, 0.6), rgba(4, 32, 41, 0)), url(http://placekitten.com/1200/800);
+    background: -moz-linear-gradient(bottom left, rgba(4, 32, 41, 0.6), rgba(4, 32, 41, 0)), url(http://placekitten.com/1200/800);
+    background: -o-linear-gradient(bottom left, rgba(4, 32, 41, 0.6), rgba(4, 32, 41, 0)), url(http://placekitten.com/1200/800);
+    background: linear-gradient(bottom left, rgba(4, 32, 41, 0.6), rgba(4, 32, 41, 0)), url(http://placekitten.com/1200/800);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  /* line 50, _/components/sass/_layout.scss */
+  header .hero .branding {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* line 59, _/components/sass/_layout.scss */
+.navigation {
+  background: #175c73;
+}
+@media (min-width: 30em) {
+  /* line 62, _/components/sass/_layout.scss */
+  .navigation .nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+  }
+  /* line 60, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .navigation .nav ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  /* line 48, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .navigation .nav ul li:first-child, .navigation .nav ul li.first {
+    padding-left: 0;
+  }
+  /* line 49, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .navigation .nav ul li:last-child {
+    padding-right: 0;
+  }
+  /* line 50, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  .navigation .nav ul li.last {
+    padding-right: 0;
+  }
+}
+/* line 67, _/components/sass/_layout.scss */
+.navigation .nav ul li i {
+  color: #f7b71a;
+  padding-right: .5em;
+}
+/* line 72, _/components/sass/_layout.scss */
+.navigation .nav ul li a {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fcf4dc;
+}
+/* line 79, _/components/sass/_layout.scss */
+.navigation .nav ul li a:hover {
+  background: #bd3613;
+}
+/* line 81, _/components/sass/_layout.scss */
+.navigation .nav ul li a:hover a {
+  color: #f8c64c;
+}
+
+/* line 91, _/components/sass/_layout.scss */
+footer {
+  color: #fcf4dc;
+  background: #0d3340;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+/* line 4, _/components/sass/_modules.scss */
+.footermenu .title {
+  float: left;
+}
+/* line 7, _/components/sass/_modules.scss */
+.footermenu ul {
+  float: left;
+}
+/* line 9, _/components/sass/_modules.scss */
+.footermenu ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 12, _/components/sass/_modules.scss */
+.footermenu ul li img {
+  width: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}

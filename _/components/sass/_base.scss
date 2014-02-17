@@ -1,0 +1,57 @@
+//Google fonts imported 
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+//For icons
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
+/*body of the page*/
+body {
+	font-family: $font-primary;
+	font-size: 1.2rem;
+	line-height: 160%;
+	background: $paleyellow;
+	color: $darkblue;
+}//body
+
+/*headings all the headings compass helper*/
+#{headings()}{
+	font-family: $font-secondary;
+	font-weight: normal;
+	color: $darkgray;
+	/*Compass mixin CSS3 feature*/
+	@include text-shadow($paleryellow 1px 1px);
+}//headings
+
+
+h1 {
+	font-size: 2.2rem;
+	color: lighten($darkblue, 25);
+	margin-bottom: .4rem; 
+	border-bottom: 1px solid $lightgray;
+	padding-top: 10px
+}//h1
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 100%;
+	margin: 20px 0 0 0;
+	color: $orange;
+}//h2
+
+h3 {
+	font-size: 1.8rem;
+	line-height: 60%;
+	color: $orange;
+}//h3
+
+a {
+	text-decoration: underline;
+	color: $mediumgray;
+	/*encapsulation*/
+	&:hover {
+		color: $orange;
+	}
+}//a
+
+p {
+	margin-bottom: 10px;
+}//p

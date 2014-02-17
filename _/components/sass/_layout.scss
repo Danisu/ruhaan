@@ -1,0 +1,97 @@
+//Susy setup ------------------------------
+//Set up your default grid values: total columns, column width, and gutter width.
+$total-columns	: 12;             //a 12-column grid
+$column-width   : 4em;            //each column is 4em wide
+$gutter-width   : 1em;            //1em gutters between columns
+$grid-padding   : $gutter-width;  //grid-padding equal to gutters
+
+
+//breakpoints
+$small	: 30em; //For cell phones
+$medium	: 47em; //For tablets
+$large	: 75em; //For desktop or laptop
+
+
+//layout ----------------------------------
+.layout {
+	padding: 0 3%;
+	//page acts as a container for our grid.
+	@include container;
+}//layout
+//header ----------------------------------
+
+header {
+	img {
+	@include border-radius(50%);	//make the img round
+		width: 95%;
+		margin: 2.5%;
+		max-width: 150px;
+		margin-bottom: 0;
+	}//header logo img
+	
+	.hero {
+		width : 100%;
+		@include at-breakpoint($medium) {
+			@include single-transition(all, 1s, ease-out);	
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 450px;
+			@include background(image-url('http://placekitten.com/1200/800'));
+			@include background(linear-gradient(bottom left, rgba($darkerblue, .6), rgba($darkerblue, 0)),image-url('http://placekitten.com/1200/800'));
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			margin: 0 auto;
+			
+			.branding {
+				position: absolute;
+				bottom: 0;
+			}//branding
+		}//breakpoint
+	}//hero
+}//header
+
+//Navigation -------------------------------
+.navigation {
+	background: lighten($darkblue, 15); //nav menu background color
+	
+	.nav ul {
+		@include at-breakpoint($small){ //for small devices
+			@include horizontal-list;
+		}//breakpoint
+		li {
+			i {
+				color: lighten($yellow, 20);
+				padding-right: .5em;
+			}//icon
+			
+			a {
+				@include single-transition(all, .5s, ease-out);	//For smooth transition
+				display: block;
+				text-decoration: none;
+				padding: 5px 10px;
+				color: $paleryellow;
+				
+				&:hover {
+					background: $orange;
+					a {
+						color: lighten($yellow, 30);
+					}
+				}//hover over parent
+			}// a (nav link)
+		}//li list item
+	}// nav ul
+}//navigation
+
+//footer ------------------------------------
+footer {
+	color: $paleryellow;
+	background: lighten($darkblue, 3);
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 100px
+}//footer
