@@ -213,15 +213,15 @@ header .hero {
   background: #175c73;
 }
 @media (min-width: 30em) {
-  /* line 62, _/components/sass/_layout.scss */
-  .navigation .nav ul {
+  /* line 61, _/components/sass/_layout.scss */
+  .navigation ul.nav {
     margin: 0;
     padding: 0;
     border: 0;
     overflow: hidden;
   }
   /* line 60, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-  .navigation .nav ul li {
+  .navigation ul.nav li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
@@ -232,25 +232,29 @@ header .hero {
     padding-right: 4px;
   }
   /* line 48, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-  .navigation .nav ul li:first-child, .navigation .nav ul li.first {
+  .navigation ul.nav li:first-child, .navigation ul.nav li.first {
     padding-left: 0;
   }
   /* line 49, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-  .navigation .nav ul li:last-child {
+  .navigation ul.nav li:last-child {
     padding-right: 0;
   }
   /* line 50, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-  .navigation .nav ul li.last {
+  .navigation ul.nav li.last {
     padding-right: 0;
   }
 }
+/* line 65, _/components/sass/_layout.scss */
+.navigation ul.nav li {
+  border-left: #819090 1px dotted;
+}
 /* line 67, _/components/sass/_layout.scss */
-.navigation .nav ul li i {
+.navigation ul.nav li i {
   color: #f7b71a;
   padding-right: .5em;
 }
 /* line 72, _/components/sass/_layout.scss */
-.navigation .nav ul li a {
+.navigation ul.nav li a {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -261,11 +265,11 @@ header .hero {
   color: #fcf4dc;
 }
 /* line 79, _/components/sass/_layout.scss */
-.navigation .nav ul li a:hover {
+.navigation ul.nav li a:hover {
   background: #bd3613;
 }
 /* line 81, _/components/sass/_layout.scss */
-.navigation .nav ul li a:hover a {
+.navigation ul.nav li a:hover a {
   color: #f8c64c;
 }
 

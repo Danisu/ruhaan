@@ -58,12 +58,12 @@ header {
 //Navigation -------------------------------
 .navigation {
 	background: lighten($darkblue, 15); //nav menu background color
-	
-	.nav ul {
+	ul.nav {
 		@include at-breakpoint($small){ //for small devices
 			@include horizontal-list;
 		}//breakpoint
 		li {
+			border-left: $lightgray 1px dotted;
 			i {
 				color: lighten($yellow, 20);
 				padding-right: .5em;
@@ -84,7 +84,7 @@ header {
 				}//hover over parent
 			}// a (nav link)
 		}//li list item
-	}// nav ul
+	}// ul nav
 }//navigation
 
 //footer ------------------------------------

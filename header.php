@@ -18,12 +18,21 @@
   <header>
     <div class="hero">
       <section class="layout">
-        <div class="branding"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://placekitten.com/150/150" alt=""/></a></div><!-- branding -->
+        <div class="branding"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://placekitten.com/300/300" alt=""/></a></div><!-- branding -->
       </section><!-- layout -->
     </div><!-- hero -->
     <div class="navigation">
       <section class="layout">
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav',) ); ?>
+		<?php 
+		//Top menu
+			wp_nav_menu(array(
+				'theme_location' => 'primary', 
+				'menu_class' => 'nav',
+				'menu_id' => '',
+				'container' => false,
+				'walker' => new Custom_Walker_Nav_Menu
+			));
+		 ?> 
       </section><!-- layout -->
     </div><!-- navigation -->
   </header><!-- header -->
